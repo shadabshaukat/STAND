@@ -9,4 +9,7 @@ STAND is a simple .sql script which creates a simple table ORDERS for any of the
 #### Oracle
 #### MySQL/MariaDB
 #### Postgres
+#### SQLlite
+#### Sybase
+#### IBM DB2
 
