@@ -72,7 +72,7 @@ INSERT INTO orders (order_id, customer_id, product_id, product_description, orde
 VALUES (15, 114, 214, 'Lamp', '40/12 Acme Street, Pin : 9000, AZ-US', to_date('2023-01-06', 'yyyy-mm-dd'), 'Deliver to Doorstep');
 
 
-## MySQL
+## MySQL/MariaDB
 
 CREATE TABLE orders (
   order_id BIGINT PRIMARY KEY,
@@ -96,6 +96,41 @@ VALUES (18, 117, 217, 'Bed', '36/8 Acme Street, Pin : 9000, AZ-US', '2023-01-04'
 
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
 VALUES (19, 118, 218, 'Wardrobe', '38/10 Acme Street, Pin : 9000, AZ-US', '2023-01-05', 'Deliver to Doorstep');
+
+
+## Postgres
+
+CREATE TABLE orders (
+  order_id bigint PRIMARY KEY,
+  customer_id bigint,
+  product_id bigint,
+  product_description VARCHAR(500),
+  order_delivery_address VARCHAR(500),
+  order_date_taken date,
+  order_misc_notes VARCHAR(500)
+);
+
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (23, 114, 214, 'Table', '30/2 Acme Street, Pin : 9000, AZ-US', '2023-01-01', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (24, 115, 215, 'Chair', '31/3 Acme Street, Pin : 9000, AZ-US', '2023-01-02', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (25, 116, 216, 'Sofa', '32/4 Acme Street, Pin : 9000, AZ-US', '2023-01-03', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (26, 117, 217, 'Bed', '33/5 Acme Street, Pin : 9000, AZ-US', '2023-01-04', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (27, 118, 218, 'Wardrobe', '34/6 Acme Street, Pin : 9000, AZ-US', '2023-01-05', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (28, 119, 219, 'Dressing Table', '35/7 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (29, 120, 220, 'Cupboard', '36/8 Acme Street, Pin : 9000, AZ-US', '2023-01-07', 'Deliver to Doorstep');
 
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
 VALUES (20, 119, 219, 'Bookshelf', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
