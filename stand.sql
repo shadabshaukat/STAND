@@ -1,6 +1,5 @@
 ## SQL Server 
 
-
 CREATE TABLE orders (
   order_id bigint PRIMARY KEY,
   customer_id bigint,
@@ -97,6 +96,15 @@ VALUES (18, 117, 217, 'Bed', '36/8 Acme Street, Pin : 9000, AZ-US', '2023-01-04'
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
 VALUES (19, 118, 218, 'Wardrobe', '38/10 Acme Street, Pin : 9000, AZ-US', '2023-01-05', 'Deliver to Doorstep');
 
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (20, 119, 219, 'Bookshelf', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (21, 120, 220, 'Mattress', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (22, 121, 221, 'Cabinet', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
 
 ## Postgres
 
@@ -132,11 +140,43 @@ VALUES (28, 119, 219, 'Dressing Table', '35/7 Acme Street, Pin : 9000, AZ-US', '
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
 VALUES (29, 120, 220, 'Cupboard', '36/8 Acme Street, Pin : 9000, AZ-US', '2023-01-07', 'Deliver to Doorstep');
 
-INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
-VALUES (20, 119, 219, 'Bookshelf', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
+
+## Sybase
+
+CREATE TABLE orders (
+  order_id bigint NOT NULL PRIMARY KEY,
+  customer_id bigint,
+  product_id bigint,
+  product_description VARCHAR(500),
+  order_delivery_address VARCHAR(500),
+  order_date_taken DATETIME,
+  order_misc_notes VARCHAR(500)
+);
+
 
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
-VALUES (21, 120, 220, 'Mattress', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+VALUES (30, 100, 200, 'Table', '30/2 Acme Street, Pin : 9000, AZ-US', '2023-01-01 00:00:00', 'Deliver to Doorstep');
 
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
-VALUES (22, 121, 221, 'Cabinet', '40/12 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+VALUES (31, 101, 201, 'Book', '31/3 Acme Street, Pin : 9000, AZ-US', '2023-01-02 00:00:00', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (32, 102, 202, 'Laptop', '32/4 Acme Street, Pin : 9000, AZ-US', '2023-01-03 00:00:00', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (33, 103, 203, 'Mobile', '33/5 Acme Street, Pin : 9000, AZ-US', '2023-01-04 00:00:00', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (34, 104, 204, 'Camera', '34/6 Acme Street, Pin : 9000, AZ-US', '2023-01-05 00:00:00', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (35, 105, 205, 'TV', '35/7 Acme Street, Pin : 9000, AZ-US', '2023-01-06 00:00:00', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (36, 106, 206,'Gaming Console', '35/7 Acme Street, Pin : 9000, AZ-US', '2023-01-06 00:00:00', 'Deliver to Doorstep');
+
+
+
+
+
