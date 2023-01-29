@@ -70,6 +70,7 @@ VALUES (14, 113, 213, 'Bookshelf', '40/12 Acme Street, Pin : 9000, AZ-US', to_da
 INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
 VALUES (15, 114, 214, 'Lamp', '40/12 Acme Street, Pin : 9000, AZ-US', to_date('2023-01-06', 'yyyy-mm-dd'), 'Deliver to Doorstep');
 
+commit;
 
 ## MySQL/MariaDB
 
@@ -141,7 +142,6 @@ INSERT INTO orders (order_id, customer_id, product_id, product_description, orde
 VALUES (29, 120, 220, 'Cupboard', '36/8 Acme Street, Pin : 9000, AZ-US', '2023-01-07', 'Deliver to Doorstep');
 
 
-
 ## Sybase
 
 CREATE TABLE orders (
@@ -178,5 +178,73 @@ VALUES (36, 106, 206,'Gaming Console', '35/7 Acme Street, Pin : 9000, AZ-US', '2
 
 
 
+## SQLlite
 
+CREATE TABLE orders (
+  order_id INTEGER PRIMARY KEY,
+  customer_id INTEGER,
+  product_id INTEGER,
+  product_description TEXT,
+  order_delivery_address TEXT,
+  order_date_taken DATE,
+  order_misc_notes TEXT
+);
+
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (37, 100, 200, 'Table', '30/2 Acme Street, Pin : 9000, AZ-US', '2023-01-01', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (38, 200, 300, 'Chair', '2/2 Acme Street, Pin : 9000, AZ-US', '2023-01-02', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (39, 300, 400, 'Sofa', '3/3 Acme Street, Pin : 9000, AZ-US', '2023-01-03', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (40, 400, 500, 'Lamp', '4/4 Acme Street, Pin : 9000, AZ-US', '2023-01-04', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (41, 500, 600, 'Carpet', '5/5 Acme Street, Pin : 9000, AZ-US', '2023-01-05', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (42, 600, 700, 'Bookshelf', '6/6 Acme Street, Pin : 9000, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (43, 700, 800, 'Tv Stand', '7/7 Acme Street, Pin : 9000, AZ-US', '2023-01-07', 'Deliver to Doorstep');
+
+
+## IBM DB2
+
+
+CREATE TABLE orders (
+  order_id BIGINT NOT NULL PRIMARY KEY,
+  customer_id BIGINT,
+  product_id BIGINT,
+  product_description VARCHAR(500),
+  order_delivery_address VARCHAR(500),
+  order_date_taken DATE,
+  order_misc_notes VARCHAR(500)
+);
+
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (44, 100, 200, 'Table', '30/2 Acme Street, Pin : 9000, AZ-US', '2023-01-01', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (45, 101, 201, 'Chair', '40/2 Acme Street, Pin : 9100, AZ-US', '2023-01-02', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (46, 102, 202, 'Lamp', '50/2 Acme Street, Pin : 9200, AZ-US', '2023-01-03', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (47, 103, 203, 'Bookshelf', '60/2 Acme Street, Pin : 9300, AZ-US', '2023-01-04', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (48, 104, 204, 'Pillow', '70/2 Acme Street, Pin : 9400, AZ-US', '2023-01-05', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (49, 105, 205, 'Blanket', '80/2 Acme Street, Pin : 9500, AZ-US', '2023-01-06', 'Deliver to Doorstep');
+
+INSERT INTO orders (order_id, customer_id, product_id, product_description, order_delivery_address, order_date_taken, order_misc_notes)
+VALUES (50, 106, 206, 'Mattress', '90/2 Acme Street, Pin : 9600, AZ-US', '2023-01-07', 'Deliver to Doorstep');
 
