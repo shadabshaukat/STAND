@@ -43,7 +43,7 @@ EXCEPTION
 END;
 /
 
--- Execute Procedure to Generate
+-- Execute Procedure --
 
 BEGIN
   add_random_orders(100000);
