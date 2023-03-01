@@ -49,11 +49,8 @@ BEGIN
   add_random_orders(100000);
 END;
 
--- Query Table --
 
-select * from  orders;
-
--- Drop Objects After Testing --
+-- Cleanup --
 
 drop table orders;
 drop procedure add_random_orders;
