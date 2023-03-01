@@ -7,9 +7,10 @@ STAND is a simple .sql script which creates a table ORDERS for any of the popula
 
 #### SQL Server
 #### Oracle
-#### MySQL/MariaDB
+#### MySQL-MariaDB
 #### Postgres
 #### SQLlite
-#### Sybase
-#### IBM DB2
+#### Sybase (Coming Soon)
+#### IBM DB2 (Coming Soon)
+#### Snowflake (Coming Soon)
 
