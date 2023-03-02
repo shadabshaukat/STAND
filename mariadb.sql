@@ -11,7 +11,7 @@ CREATE TABLE orders (
 );
 
 
--- Create a procedure to insert random data into the 'orders' table in MySQL --
+-- Create a procedure to insert random data into the 'orders' table in MariaDB --
 
 DELIMITER //
 
