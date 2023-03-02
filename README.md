@@ -5,10 +5,11 @@ STAND is a simple .sql script which creates a table ORDERS for any of the popula
 
 ## Databases Supported :
 
-#### SQL Server
 #### Oracle
-#### MySQL-MariaDB
+#### MySQL
 #### Postgres
+#### MariaDB
+#### SQL Server
 #### SQLlite
 #### Snowflake
 #### Sybase (Coming Soon)
