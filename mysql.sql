@@ -49,7 +49,7 @@ END//
 DELIMITER ;
 
 
--- Generate and insert 100 random orders into the 'orders' table using the procedure --
+-- Generate and insert 10k random orders into the 'orders' table using the procedure --
 
 CALL add_random_orders(10000);
 
