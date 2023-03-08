@@ -48,6 +48,7 @@ END;
 BEGIN
   add_random_orders(100000);
 END;
+/
 
 
 -- Cleanup --
