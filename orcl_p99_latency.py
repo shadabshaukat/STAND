@@ -73,6 +73,18 @@ if csvfile is not None:
     csvfile.close()
 
 # Calculate the P99 latency
+"""
+Explanation of p99 latency in the context of the script and output in CSV file:
+
+The p99 latency is the 99th percentile of the query times, which represents the time it takes for the query to be completed
+for 99% of the requests. In other words, it's the maximum time it takes for a query to be completed for the majority of the requests.
+
+In the context of this script, the query time is measured for each query executed, and the results are written to a CSV file.
+After the script is finished running, the p99 latency can be calculated by reading the query times from the CSV file and
+calculating the 99th percentile. This provides a useful metric for measuring the performance of the database for the given
+query over the duration of the script.
+"""
+
 if len(query_times) > 0:
     p99_latency = np.percentile(query_times, 99)
     print("P99 latency: {:.2f} ms".format(p99_latency))
