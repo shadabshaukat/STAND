@@ -1,4 +1,4 @@
--- Oracle Database --
+-- Oracle Database Version 12.1+ Only --
 
 CREATE TABLE orders (
   order_id NUMBER(38) GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
