@@ -53,5 +53,5 @@ END;
 
 -- Cleanup --
 
-drop table orders;
-drop procedure add_random_orders;
+--drop table orders;
+--drop procedure add_random_orders;
