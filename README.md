@@ -12,6 +12,7 @@ STAND is a simple .sql script which creates a table ORDERS for any of the popula
  SQL Server
  SQLlite
  Snowflake
+ Redshift
  Sybase (Coming Soon)
  IBM DB2 (Coming Soon)
  ```
