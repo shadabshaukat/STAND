@@ -12,7 +12,9 @@ STAND is a simple .sql script which creates a table ORDERS for any of the popula
  SQL Server
  SQLlite
  Snowflake
- Redshift
+ Amazon Redshift
+ Amazon Aurora DSQL
+
  Sybase (Coming Soon)
  IBM DB2 (Coming Soon)
  ```
