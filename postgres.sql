@@ -52,6 +52,6 @@ SELECT add_random_orders(10000);
 
 -- Cleanup --
 
-drop table orders;
-drop function add_random_orders;
+--drop table orders;
+--drop function add_random_orders;
 
